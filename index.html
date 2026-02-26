@@ -11,7 +11,7 @@
 <style>
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3f0f9;
+  background-color: #f6f7fa;
   margin: 0;
 }
 
@@ -129,7 +129,7 @@ body {
 /* ================= ABOUT ================= */
 .content-section {
   padding: 35px 20px 50px;
-  background: #fefcff;
+  background: #faf9fc;
 }
 
 .content-section p {
@@ -256,16 +256,16 @@ body {
 
 /* ================= DOWNLOAD / QR ================= */
 .cta {
-  background: linear-gradient(180deg, #ffffff 0%, #f8f2ff 30%, #f0e6ff 70%, #e8dcf7 100%);
+  background: #ffffff;   /* clean white */
   padding: 70px 0;
-  color: #4b0082;
+  color: #000000;
 }
 
 .cta-title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #4a0072;
+  color: #6a0dad;
 }
 
 .cta-sub {
@@ -296,8 +296,8 @@ body {
 }
 
 .step-number {
-  background: #6a0dad;
-  color: #fff;
+   background: transparent;          /* no fill */
+  color: #000000;                   /* black number */
   width: 28px;
   height: 28px;
   font-size: 0.85rem;
@@ -307,26 +307,27 @@ body {
   justify-content: center;
   font-weight: 600;
   flex-shrink: 0;
+  border: 2px solid #6a0dad; 
 }
 
 .play-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #6a0dad;
-  color: #ffffff;
-  padding: 10px 22px;
-  border-radius: 25px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: 2px solid #6a0dad;
+  background-color: #ffffff;
+  color: #000000;
   font-weight: 600;
-  font-size: 0.9rem;
   text-decoration: none;
-  transition: 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
 .play-btn:hover {
-  background: #4a0072;
+  background: #6a0dad;
   transform: translateY(-2px);
+  color: #ffffff;
   box-shadow: 0 6px 15px rgba(106,13,173,0.3);
 }
 
@@ -344,13 +345,33 @@ body {
 }
 
 .footer {
-  background: linear-gradient(180deg, #4a0072 0%, #2d0a3d 100%);
+  background: linear-gradient(180deg, #7a2fb3 0%, #5e1e96 100%);
   color: #ffffff;
-  padding: 25px 0;
+  padding: 38px 0;
 }
 
-.footer p {
-  color: #ffffff;
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  margin-left: -15px;  /* slight move to left */
+}
+
+.footer-logo img {
+  height: 70px;   /* big and clear */
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.footer-text {
+  flex: 1;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 </style>
 </head>
@@ -405,7 +426,7 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
 </section>
 
 <!-- ========== HORIZONTAL APP FLOW - 3 COLUMNS ========== -->
-<section class="app-flow py-5" style="background-color: #f5f5f7;">
+<section class="app-flow py-5" style="background-color:  #ffffff;">
   <div class="container">
     <h2 class="section-title text-center mb-4">How to Navigate the App</h2>
     
@@ -507,8 +528,8 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
   background: #ffffff;
   border-radius: 24px;
   padding: 1.8rem 1.2rem;
-  border: 1px solid rgba(106,13,173,0.15);
-  box-shadow: 0 10px 25px rgba(106,13,173,0.08);
+  border: 1px solid #e5e5e5;   /* neutral grey */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);  /* neutral shadow */
   transition: all 0.3s ease;
   height: 100%;
   display: flex;
@@ -516,9 +537,8 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
 }
 
 .flow-card-horizontal:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 35px rgba(106,13,173,0.15);
-  border-color: rgba(106,13,173,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
 }
 
 .flow-img-horizontal {
@@ -531,8 +551,9 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
 }
 
 .flow-step-number {
-  background: #6a0dad;
-  color: white;
+    background: transparent;        /* remove fill */
+  color: #000000;                 /* black number */
+  border: 2px solid #6a0dad;      /* purple outline */
   width: 32px;
   height: 32px;
   font-size: 1rem;
@@ -542,6 +563,7 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+
 }
 
 .flow-title {
@@ -569,7 +591,7 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
 </style>
 
 <!-- ========== ROAD SAFETY SECTION - THREE SEPARATE BOXES ========== -->
-<section class="py-4 road-safety-box" style="background-color: #f8f5fc;">
+<section class="py-4 road-safety-box" style="background-color: #eef0f4; border-top: 1px solid #e4e6eb; border-bottom: 1px solid #e4e6eb;">
   <div class="container">
     
     <!-- Section Header -->
@@ -695,8 +717,23 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
 </section>
 
 <!-- FOOTER -->
-<footer class="footer text-center">
-<div class="container"><p>© 2026 INAI | Learn Right App</p></div>
+<footer class="footer">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- Left: INAI Logo -->
+    <div class="footer-logo">
+      <img src="images\INAI Transparent 1.png" alt="INAI Logo">
+    </div>
+
+    <!-- Center: Copyright -->
+    <div class="footer-text text-center">
+      © 2026 INAI | Learn Right App
+    </div>
+
+    <!-- Right: Empty spacer for symmetry -->
+    <div style="width:120px;"></div>
+
+  </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
