@@ -29,7 +29,7 @@ body {
   border-radius: 60px;
   width: 92%;
   margin: 0 auto;
-  padding: 15px 30px;
+  padding: 8px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,8 +38,22 @@ body {
 }
 
 .logo img {
-  height: 45px;
-  margin-right: 15px;
+  height: 58px;           /* increased from 50px */
+  width: auto;
+  object-fit: contain;
+  display: block;
+
+  
+
+}
+
+.logo img:nth-child(3) {
+  height: 54px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 28px; /* cleaner spacing */
 }
 
 .btn-contact {
@@ -373,6 +387,30 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
 }
+.play-badge img {
+  height: 65px;   /* Adjust size here */
+  width: auto;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.play-badge img:hover {
+  transform: scale(1.05);
+}
+.footer-social {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #e0c3ff;
+  transform: translateY(-3px);
+}
 </style>
 </head>
 <body>
@@ -381,9 +419,9 @@ body {
 <div class="navbar-container">
   <div class="navbar-custom">
     <div class="logo d-flex align-items-center">
-      <img src="images/inai_logo.jpeg" alt="INAI">
-      <img src="images/ihub_logo.jpeg" alt="iHUB">
-      <img src="images/iiit_logo.jpeg" alt="IIIT">
+      <img src="images\INAI Transparent.png" alt="INAI">
+      <img src="images\ihub_logo-transparent.png" alt="iHUB">
+      <img src="images\IIIT Transparent.png" alt="IIIT">
     </div>
     <a href="#download" class="btn-contact">LEARN MORE</a>
   </div>
@@ -397,9 +435,11 @@ body {
       A comprehensive road safety education mobile application designed to help citizens
       understand traffic rules and prepare for learner license tests.
     </p>
-    <a href="#download" class="hero-btn">
-      <i class="bi bi-google-play"></i> Download on Google Play
-    </a>
+   <div class="mt-4">
+  <a href="#download" class="hero-btn">
+  <i class="bi bi-google-play"></i> Download on Google Play
+</a>
+</div>
   </div>
 </section>
 
@@ -702,7 +742,11 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
           <div class="step"><div class="step-number">3</div><div style="color: #000000;">Click on the official app published by <strong>INAI / IIIT Hyderabad.</strong></div></div>
           <div class="step"><div class="step-number">4</div><div style="color: #000000;">Tap <strong>Install</strong>.</div></div>
           <div class="step"><div class="step-number">5</div><div style="color: #000000;">Open the app and begin learning.</div></div>
-          <a href="https://play.google.com/store/apps/details?id=com.inai.drivesafe&pcampaignid=web_share" class="play-btn"><i class="bi bi-google-play"></i> View on Google Play</a>
+          <a href="https://play.google.com/store/apps/details?id=com.inai.drivesafe&pcampaignid=web_share"
+   class="play-badge"
+   target="_blank">
+   <img src="images\download_button.png" alt="Get it on Google Play">
+</a>
         </div>
       </div>
       <div class="col-lg-4 text-center">
@@ -722,7 +766,7 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
     
     <!-- Left: INAI Logo -->
     <div class="footer-logo">
-      <img src="images\INAI Transparent 1.png" alt="INAI Logo">
+      <img src="images/INAI Transparent 1.png" alt="INAI Logo">
     </div>
 
     <!-- Center: Copyright -->
@@ -730,8 +774,22 @@ understand traffic rules, prepare for learner license tests, and adopt responsib
       © 2026 INAI | Learn Right App
     </div>
 
-    <!-- Right: Empty spacer for symmetry -->
-    <div style="width:120px;"></div>
+    <!-- Right: Social Icons -->
+    <div class="footer-social">
+      <a href="https://x.com/inai_ai" target="_blank" title="Follow us on X">
+  <i class="bi bi-twitter-x"></i>
+</a>
+
+      <a href="https://www.instagram.com/inai_iiithyd" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/watch?v=OTI-WQEqrUA&t=1s" target="_blank">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/inai-iiit-hyd/?originalSubdomain=in" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
 
   </div>
 </footer>
