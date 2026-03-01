@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn Right | Get in Touch</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+/* ===== BODY BACKGROUND (Soft Lavender Gradient) ===== */
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(
+        180deg,
+        #f4f0fa 0%,
+        #f2ecfb 35%,
+        #ffffff 70%
+    );
+}
+
+/* ===== NAVBAR ===== */
+
+.custom-navbar {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 5;
+}
+
+.logo-img {
+    height: 55px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+/* ===== WAVE SECTION (STARTS MIDDLE → FLOWS DOWN) ===== */
+
+.wave-bg {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.wave-bg svg {
+    position: absolute;
+    width: 160%;
+    left: -30%;
+    filter: blur(40px);   /* subtle blur */
+    transform: scale(1.2);
+}
+
+/* Lavender tones */
+.wave1 {
+    top: 0;
+    opacity: 0.35;
+}
+
+.wave2 {
+    top: 140px;
+    opacity: 0.25;
+}
+
+.wave3 {
+    top: 260px;
+    opacity: 0.18;
+}
+
+/* ===== SOFT FADE INTO WHITE ===== */
+
+.wave-fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0) 0%,
+        #ffffff 100%
+    );
+    z-index: 1;
+}
+
+/* ===== FORM CARD ===== */
+
+.iframe-container {
+    max-width: 1000px;
+    margin: 120px auto 180px auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+    position: relative;
+    z-index: 3;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 1100px;
+    border: none;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    background: #5e1e96;
+    padding: 35px 0;
+    color: white;
+    position: relative;
+    z-index: 4;
+}
+
+.footer-logo {
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 18px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e3cfff;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+    .iframe-container {
+        margin: 80px 20px 140px 20px;
+        padding: 25px;
+    }
+
+    .wave-bg svg {
+        width: 220%;
+        left: -60%;
+        filter: blur(35px);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- WAVES STARTING FROM MIDDLE -->
+<div class="wave-bg">
+
+<svg class="wave1" viewBox="0 0 1440 320">
+<path fill="#bfa6f5"
+d="M0,160L80,165C160,170,320,180,480,170C640,160,800,128,960,128C1120,128,1280,160,1360,176L1440,192V320H0Z"></path>
+</svg>
+
+<svg class="wave2" viewBox="0 0 1440 320">
+<path fill="#cbb7f7"
+d="M0,224L80,213C160,203,320,181,480,165C640,149,800,139,960,149C1120,160,1280,192,1360,208L1440,224V320H0Z"></path>
+</svg>
+
+<svg class="wave3" viewBox="0 0 1440 320">
+<path fill="#d8c8fa"
+d="M0,256L80,240C160,224,320,192,480,176C640,160,800,160,960,176C1120,192,1280,224,1360,240L1440,256V320H0Z"></path>
+</svg>
+
+<div class="wave-fade"></div>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>
+      <img src="images/INAI Transparent 1.png" class="logo-img">
+      <img src="images/ihub_logo-transparent.png" class="logo-img">
+      <img src="images/IIIT Transparent.png" class="logo-img">
+    </div>
+  </div>
+</nav>
+
+<!-- FORM -->
+<div class="iframe-container">
+  <iframe 
+    src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=vDsaA3zPK06W7IZ1VVQKHDQq7ewmIoNLseLErScWzWxUMVRWRjhQSTU1MFdVQVFBUDFBOTVFUElMSC4u&embed=true">
+  </iframe>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <img src="images/INAI Transparent 1.png" class="footer-logo">
+
+    <div class="social-icons">
+      <a href="https://x.com/inai_ai" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/inai_iiithyd" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/company/inai-iiit-hyd/?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/watch?v=OTI-WQEqrUA&t=1s" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+
+  </div>
+
+  <div class="container text-right copyright">
+      Copyright © 2026 INAI | All rights reserved
+  </div>
+</footer>
+
+</body>
+</html>
